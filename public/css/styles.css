@@ -1,0 +1,38 @@
+body {
+	padding: 50px 20px;
+	/*text-align: center;*/
+	background: #a3daff;
+}
+h1 {
+	border-bottom: 1px black solid;
+}
+code {
+	color: blue;
+}
+
+h4 {
+	margin: 10px auto;
+}
+
+p {
+	margin: 0 auto;
+}
+.input-group {
+	text-align: center;
+}
+button {
+	background: #0080ff;
+	color: #ffddff;
+	border: none;
+	border-radius: 20%;
+}
+.latest {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 10px auto;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "image-search",
+  "version": "1.0.0",
+  "description": "Image search application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renestl/image-search.git"
+  },
+  "author": "Jennifer Currie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Renestl/image-search/issues"
+  },
+  "homepage": "https://github.com/Renestl/image-search#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-sanitizer": "^1.0.2",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.6",
+    "request": "^2.81.0"
+  }
+}

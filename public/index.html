@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<title>Image Search Abstraction</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+	<h1>Image Search Abstraction</h1>
+<!--
+	<div class="input-group">
+		<input id="search-field" type="text" placeholder="Enter search term">
+		<button type="button">Search</button>
+	</div>
+
+	<div class="latest">
+		<a href="/recent">Recent Searches</a>
+	</div>-->
+
+	<h4>User Stories:</h4>
+	<ul>
+		<li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+		<li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+		<li>I can get a list of the most recently submitted search strings.</li>
+	</ul>
+
+	<h4>Usage:</h4>
+	<p>
+		<code>
+			https://boiling-headland-84982.herokuapp.com/
+			<br />
+			https://boiling-headland-84982.herokuapp.com/recent
+		</code>
+	</p>
+
+	<h4>Example query output:</h4>
+	<p>
+		<code>
+			https://boiling-headland-84982.herokuapp.com/
+		</code>
+	</p>
+	<p>
+		<code>
+			[
+				{
+					"url": "http://data.whicdn.com/images/29044507/large.jpg",
+					"snippet": "Most popular tags for this ...",
+					"thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRre4NmoJmEOVxSi1VNAumtmb6nuuTpYrLlCPGuOwXXF-R34ngusPjC144",
+					"context": "http://weheartit.com/entry/group/1764108"
+				},
+				{
+					"url": "http://www.bajiroo.com/wp-content/uploads/2013/06/funny-lol-cats-fun-pics-images-photos-pictures-5.jpg",
+					"snippet": "funny-lol-cats-fun-pics-images ...",
+					"thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUXCGnfYdIRdxb86GIz-VCaSsgmgG5uS27hMCq1IquRvSTd2zwQwtphXA",
+					"context": "http://www.bajiroo.com/33-funniest-lolcats-ever"
+				}
+  			]
+		</code>
+	</p>
+
+	<h4>Example query output:</h4>
+	<p>
+		<code>
+			https://boiling-headland-84982.herokuapp.com/
+		</code>
+	</p>
+	<p>
+		<code>
+			[
+				{
+					"term": "lolcats funny",
+					"when": "2017-03-10T22:41:41.254Z"
+				},
+				{
+					"term": "lolcats funny",
+					"when": "2017-03-10T22:35:55.475Z"
+				},
+			]
+		</code>
+	</p>
+
+	<footer>
+		<span>Created by Jennifer Currie</span>
+				<section id="socialMedia">
+					<a href="http://www.freecodecamp.com/renestl" target='_blank' role='button' class='socialContact'><i class='fire icon'></i></a>
+					<a href="https://github.com/Renestl" target='_blank' role='button' class='socialContact'><i class='github icon'></i></a>
+					<a href="http://codepen.io/renestl/" target='_blank' role='button' class='socialContact'><i class='codepen icon'></i></a>
+					<a href="https://linkedin.com/pub/jennifer-currie-mba-rhia/5/975/5a8" target='_blank' role='button' class='socialContact'><i class='linkedin icon'></i></a>
+				</section>
+	</footer>
+
+</body>
+</html>
